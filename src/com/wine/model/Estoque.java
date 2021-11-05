@@ -79,7 +79,6 @@ public class Estoque {
       LocalDate validade = LocalDate.parse(lerEntrada("\nInforme a Validade do produto a ser cadastrado:"));
       Produto produto = new Produto(codigo, nome, preco, marca, categoria, validade);
       produtos.add(produto);
-      System.out.println(produtos.size());
     }
 
     public void fillProdutos(){
