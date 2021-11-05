@@ -37,7 +37,13 @@ public class Main {
                 break;
             case "6":
                 estoque.listarVencidos();
-                break;   
+                break;
+            case "7":
+                estoque.listarProdutos();
+                break;
+            case "8":
+                estoque.fillProdutos();
+                break;       
             default:
             	imprimir("Opcao invalida.");
             	break;
@@ -52,6 +58,8 @@ public class Main {
         imprimir("4. Exibir produto");
         imprimir("5. Listar produtos por categoria");
         imprimir("6. Listar produtos vencidos");
+        imprimir("7. Listar produtos");
+        imprimir("8. Preencher com produtos");
     }
 
     private static void imprimir(String s) {
